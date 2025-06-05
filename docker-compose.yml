@@ -1,0 +1,8 @@
+services:
+  twitch-esp32:
+    build: .
+    restart: always
+    ports:
+      - 3092:3092
+    env_file:
+      - .env
