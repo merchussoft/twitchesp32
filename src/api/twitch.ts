@@ -25,6 +25,7 @@ async function getUserId(): Promise<string | null> {
 }
 
 export async function getStreamInfo(io?:IOServer) {
+    console.log('aqui llego ');
     const user_id = await getUserId();
 
     const { data } = await axios.get('https://api.twitch.tv/helix/streams', {
